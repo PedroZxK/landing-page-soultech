@@ -1,3 +1,33 @@
 body {
-    background-color: brown;
+    background: linear-gradient(to top, #222222, #787878);
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-soultech {
+    display: flex;
+    align-items: center;
+}
+
+.itens-nav-div ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.itens-nav-div ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.title, .apresentacao p {
+    color: white;
 }
