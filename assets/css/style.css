@@ -5,6 +5,18 @@ body {
     padding: 0;
 }
 
+.navbar-soultech {
+    display: flex;
+    align-items: center;
+}
+
+
+.itens-nav-div ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 h1,
 .itens-nav-div ul li a {
     font-family: 'Inter', sans-serif;
@@ -16,20 +28,14 @@ a {
     font-family: 'Inika', serif;
 }
 
-#soultech-cards img,
-#frequently-questions img,
-#contact-soultech img,
-#footer-div img {
-    width: 10px;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-.navbar-soultech {
+.itens-nav-div {
     display: flex;
-    align-items: center;
+    flex: 1;
+    justify-content: left;
 }
 
 .itens-nav-div ul {
@@ -43,6 +49,13 @@ html {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.itens-nav-div ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.125rem;
+    transition: 0.3s;
 }
 
 .title,
@@ -76,6 +89,12 @@ html {
 .saiba-mais-soultech {
     display: flex;
     justify-content: right;
+    transition: 0.3s;
+}
+
+.saiba-mais-soultech:hover {
+    scale: 105%;
+    transition: 0.3s;
 }
 
 .saiba-mais-soultech a {
@@ -143,6 +162,10 @@ html {
     margin: 30px;
 }
 
+.face-img:hover {
+    scale: 104%;
+}
+
 #soultech-cards {
     display: flex;
     margin-top: 8rem;
@@ -161,6 +184,14 @@ html {
     border-radius: 15px;
     position: relative;
     text-align: center;
+    transition: 0.3s;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    scale: 105%;
+    transition: 0.3s;
 }
 
 .card1 h1,
@@ -231,6 +262,12 @@ html {
     background-size: 20px;
     background-position: right 20px center;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.question-div:hover {
+    background-size: 25px;
+    transition: 0.3s;
 }
 
 .faq-answer {
@@ -284,6 +321,25 @@ html {
     padding: 5px;
 }
 
+.email-contact a,
+.call-contact a,
+.instagram-contact a,
+.twitter-contact a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.email-contact a:hover,
+.call-contact a:hover,
+.instagram-contact a:hover,
+.twitter-contact a:hover {
+    scale: 105%;
+    text-decoration: underline;
+    transition: 0.3s;
+    color: rgb(211, 211, 211);
+}
+
 .email-contact img,
 .call-contact img,
 .instagram-contact img,
@@ -291,6 +347,15 @@ html {
     margin-right: 5px;
     scale: 200%;
     filter: invert(100%) brightness(1000%);
+    transition: 0.3s;
+}
+
+.email-contact img:hover,
+.call-contact img:hover,
+.instagram-contact img:hover,
+.twitter-contact img:hover {
+    scale: 230%;
+    transition: 0.3s;
 }
 
 .email-contact p,
@@ -390,28 +455,13 @@ html {
 
 .contact-links img {
     scale: 300%;
-    filter: invert(100%) brightness(1000%);
+    filter: invert(100%) brightness(100%);
+    transition: 0.3s;
 }
 
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 10px;
-    /* Adiciona a transição à propriedade 'transform' */
-    transition: transform 0.3s ease;
-}
-
-.menu-toggle.active {
-    /* Altera a rotação das barras quando o menu está ativo */
-    transform: rotate(90deg); 
-}
-.menu-toggle .bar {
-    background-color: #fff;
-    height: 3px;
-    width: 25px;
-    margin: 2px 0;
+.contact-links img:hover {
+    scale: 330%;
+    transition: 0.3s;
 }
 
 #soultech-cards {
@@ -419,4 +469,11 @@ html {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+#soultech-cards img,
+#frequently-questions img,
+#contact-soultech img,
+#footer-div img {
+    width: 10px;
 }

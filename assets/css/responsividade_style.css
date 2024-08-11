@@ -1,3 +1,8 @@
+* {
+    transition: all 0.5s ease;
+}
+
+body,
 .img-atomo,
 #contact-soultech,
 .title,
@@ -14,10 +19,14 @@
 .itens-nav-div,
 .square-front-contact,
 #frequently-questions {
-    transition: margin-left 0.5s ease, right 0.5s ease, width 0.5s ease, scale 0.5s ease, top 0.5s ease, font-size 0.5s ease, display 0.5s ease, padding 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 @media only screen and (max-width: 319px) {
+    .itens-nav-div {
+        display: none;
+    }
+
     .img-atomo {
         display: none;
     }
@@ -84,51 +93,6 @@
         margin-left: -20px;
     }
 
-    .itens-nav-div {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #171717;
-        width: 0;
-        overflow: hidden;
-        height: 100vh;
-        z-index: 1000;
-        transition: width 0.3s ease, padding 0.3s ease;
-    }
-
-    .itens-nav-div.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 250px;
-    }
-
-    .itens-nav-div ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .itens-nav-div ul li {
-        margin: 20px 0;
-    }
-
-    .itens-nav-div ul li a {
-        text-align: center;
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #fff;
-        transition: color 0.3s ease;
-    }
-
-    .itens-nav-div ul li a:hover {
-        color: #ddd;
-    }
-
     .faq-item {
         width: 80%;
     }
@@ -182,23 +146,6 @@
         margin-top: 7rem;
     }
 
-    .itens-nav-div {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .itens-nav-div.active {
-        display: block;
-    }
-
-    .left-nav-div,
-    .menu-toggle {
-        width: 100%;
-    }
-
     .square-front-contact h1 {
         text-align: center;
     }
@@ -216,9 +163,63 @@
     .faq-item {
         width: 1200%;
     }
+
+    .itens-nav-div {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .itens-nav-div.active {
+        display: flex;
+    }
+
+    .itens-nav-div ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens-nav-div ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        transform: translateY(-0%);
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-toggle .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 30px;
+        border-radius: 2px;
+        transition: background-color 0.3s ease;
+    }
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
+    .itens-nav-div {
+        display: none;
+    }
+
     .img-atomo {
         display: none;
     }
@@ -285,53 +286,6 @@
         margin-left: -20px;
     }
 
-    .itens-nav-div {
-        display: none;
-        position: absolute;
-        top: 90px;
-        right: 65px;
-        background-color: #1a1a1a;
-        width: 0;
-        height: 45vh;
-        z-index: 1000;
-        transition: width 0.3s ease, padding 0.3s ease;
-    }
-
-    .itens-nav-div.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 125px;
-        transition: width 1s ease;
-    }
-
-    .itens-nav-div ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-
-    }
-
-    .itens-nav-div ul li {
-        margin: 20px 0;
-    }
-
-    .itens-nav-div ul li a {
-        text-align: center;
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #fff;
-        transition: color 0.3s ease;
-    }
-
-    .itens-nav-div ul li a:hover {
-        color: #ddd;
-    }
-
     .faq-item {
         width: 80%;
     }
@@ -339,8 +293,8 @@
     .card1,
     .card2,
     .card3 {
-        width: 7rem;
-        height: 20rem;
+        width: 15rem;
+        height: 30rem;
         margin-top: 30px;
     }
 
@@ -385,25 +339,6 @@
         margin-top: 7rem;
     }
 
-    .itens-nav-div {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-        margin-left: 9rem;
-    }
-    
-
-    .itens-nav-div.active {
-        display: block;
-    }
-
-    .left-nav-div,
-    .menu-toggle {
-        width: 100%;
-    }
-
     .square-front-contact h1 {
         text-align: center;
     }
@@ -411,7 +346,6 @@
     .question-div {
         background-position: bottom 1px;
         background-position-y: calc(100% + -20px);
-
     }
 
     #frequently-questions {
@@ -421,9 +355,62 @@
     .faq-item {
         width: 1200%;
     }
+
+    .itens-nav-div {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .itens-nav-div.active {
+        display: flex;
+    }
+
+    .itens-nav-div ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens-nav-div ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        transform: translateY(-0%);
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-toggle .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 30px;
+        border-radius: 2px;
+        transition: background-color 0.3s ease;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .itens-nav-div {
+        display: none;
+    }
 
     #contact-soultech {
         right: 0;
@@ -438,84 +425,48 @@
         margin-left: -20px;
     }
 
-    .itens-nav-div {
-        display: none;
-        position: absolute;
-        top: 90px;
-        right: 65px;
-        background-color: #1a1a1a;
-        width: 0;
-        height: 45vh;
-        z-index: 1000;
-        transition: width 0.3s ease, padding 0.3s ease;
-    }
-
-    .itens-nav-div.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 125px;
-        transition: width 1s ease;
-    }
-
-    .itens-nav-div ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-
-    }
-
-    .itens-nav-div ul li {
-        margin: 20px 0;
-    }
-
-    .itens-nav-div ul li a {
-        text-align: center;
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #fff;
-        transition: color 0.3s ease;
-    }
-
-    .itens-nav-div ul li a:hover {
-        color: #ddd;
-    }
     .faq-item {
         width: 80%;
+    }
+
+    #soultech-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .card1,
     .card2,
     .card3 {
-        width: 6rem;
+        width: 7rem;
         height: 20rem;
+        margin: 10px;
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .card3 {
+        order: 3;
     }
 
     .card1 h1,
     .card2 h1,
     .card3 h1 {
-        font-size: 0.7rem;
-    }
-
-    .card1 p,
-    .card2 p,
-    .card3 p {
-        font-size: 0.7rem;
+        margin-top: -20px;
     }
 
     .card-top {
         width: 4rem;
         height: 4rem;
+        position: relative;
         top: -2rem;
     }
 
     .card-top img {
         scale: 400%;
     }
+
 
     .square-information {
         flex-direction: column;
@@ -530,24 +481,6 @@
         margin-top: 7rem;
     }
 
-    .itens-nav-div {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-        margin-left: 27rem;
-    }
-
-    .itens-nav-div.active {
-        display: block;
-    }
-
-    .left-nav-div,
-    .menu-toggle {
-        width: 100%;
-    }
-
     .square-front-contact h1 {
         text-align: center;
     }
@@ -557,10 +490,64 @@
         background-position-y: calc(100% + -20px);
 
     }
+
+    .itens-nav-div {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .itens-nav-div.active {
+        display: flex;
+    }
+
+    .itens-nav-div ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens-nav-div ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        transform: translateY(-0%);
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-toggle .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 30px;
+        border-radius: 2px;
+        transition: background-color 0.3s ease;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
     .menu-toggle {
+        display: none;
+    }
+
+    .itens-nav-div.active {
         display: none;
     }
 
@@ -625,6 +612,10 @@
         display: none;
     }
 
+    .itens-nav-div.active {
+        display: none;
+    }
+
     .img-atomo {
         margin-left: 110%;
         scale: 4500%;
@@ -646,6 +637,10 @@
 
 @media only screen and (min-width: 1201px) {
     .menu-toggle {
+        display: none;
+    }
+
+    .itens-nav-div.active {
         display: none;
     }
 

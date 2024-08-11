@@ -54,6 +54,6 @@ const hamburguerButton = document.querySelector('.menu-toggle');
 const itensNavDiv = document.querySelector('.itens-nav-div');
 
 hamburguerButton.addEventListener('click', () => {
-  itensNavDiv.classList.toggle('active');
-  hamburguerButton.classList.toggle('active');
+    itensNavDiv.classList.toggle('active');
+    hamburguerButton.classList.toggle('active');
 });
