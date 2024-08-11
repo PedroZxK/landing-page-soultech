@@ -1,0 +1,665 @@
+.img-atomo,
+#contact-soultech,
+.title,
+#apresentation-soultech,
+.faq-item,
+.card1,
+.card2,
+.card3,
+.card-top,
+.square-information,
+.face-img,
+#footer-div,
+.menu-toggle,
+.itens-nav-div,
+.square-front-contact,
+#frequently-questions {
+    transition: margin-left 0.5s ease, right 0.5s ease, width 0.5s ease, scale 0.5s ease, top 0.5s ease, font-size 0.5s ease, display 0.5s ease, padding 0.5s ease;
+}
+
+@media only screen and (max-width: 319px) {
+    .img-atomo {
+        display: none;
+    }
+
+    #contact-soultech {
+        right: 0;
+        width: 90%;
+    }
+
+    #frequently-questions {
+        padding: 10px;
+    }
+
+    .faq-item {
+        margin-bottom: 10px;
+    }
+
+    .question-div {
+        padding: 8px;
+        width: 8%;
+    }
+
+    .question-faq {
+        font-size: 0.9rem;
+    }
+
+    .faq-answer {
+        padding: 8px;
+        font-size: 0.85rem;
+        width: 8%;
+    }
+
+    .soultech-footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .left-footer .img-footer-logo {
+        max-width: 200px;
+    }
+
+    .middle-footer p {
+        font-size: 0.7rem;
+        margin-bottom: 20%;
+    }
+
+    .right-footer {
+        margin-left: 10%;
+        margin-bottom: 20%;
+    }
+
+
+    .apresentacao p {
+        width: 225px;
+    }
+
+    .saiba-mais-soultech {
+        display: flex;
+        justify-content: left;
+    }
+
+    .apresentacao {
+        margin-left: -20px;
+    }
+
+    .itens-nav-div {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #171717;
+        width: 0;
+        overflow: hidden;
+        height: 100vh;
+        z-index: 1000;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .itens-nav-div.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+    .itens-nav-div ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .itens-nav-div ul li {
+        margin: 20px 0;
+    }
+
+    .itens-nav-div ul li a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .itens-nav-div ul li a:hover {
+        color: #ddd;
+    }
+
+    .faq-item {
+        width: 80%;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 7rem;
+        height: 20rem;
+        margin-top: 30px;
+    }
+
+    #soultech-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .card1 h1,
+    .card2 h1,
+    .card3 h1 {
+        font-size: 0.85rem;
+    }
+
+    .card-top {
+        width: 4rem;
+        height: 4rem;
+        top: -2rem;
+    }
+
+    .card-top img {
+        scale: 400%;
+    }
+
+    .square-information {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .face-img {
+        display: none;
+    }
+
+    #footer-div {
+        margin-top: 7rem;
+    }
+
+    .itens-nav-div {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .itens-nav-div.active {
+        display: block;
+    }
+
+    .left-nav-div,
+    .menu-toggle {
+        width: 100%;
+    }
+
+    .square-front-contact h1 {
+        text-align: center;
+    }
+
+    .question-div {
+        background-position: bottom 1px;
+        background-position-y: calc(100% + -20px);
+
+    }
+
+    #frequently-questions {
+        flex-direction: column;
+    }
+
+    .faq-item {
+        width: 1200%;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .img-atomo {
+        display: none;
+    }
+
+    #contact-soultech {
+        right: 0;
+        width: 80%;
+    }
+
+    #frequently-questions {
+        padding: 10px;
+    }
+
+    .faq-item {
+        margin-bottom: 10px;
+    }
+
+    .question-div {
+        padding: 8px;
+        width: 8%;
+    }
+
+    .question-faq {
+        font-size: 0.9rem;
+    }
+
+    .faq-answer {
+        padding: 8px;
+        font-size: 0.85rem;
+        width: 8%;
+    }
+
+    .soultech-footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .left-footer .img-footer-logo {
+        max-width: 200px;
+    }
+
+    .middle-footer p {
+        font-size: 0.7rem;
+        margin-bottom: 20%;
+    }
+
+    .right-footer {
+        margin-left: 10%;
+        margin-bottom: 20%;
+    }
+
+
+    .apresentacao p {
+        width: 225px;
+    }
+
+    .saiba-mais-soultech {
+        display: flex;
+        justify-content: left;
+    }
+
+    .apresentacao {
+        margin-left: -20px;
+    }
+
+    .itens-nav-div {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 65px;
+        background-color: #1a1a1a;
+        width: 0;
+        height: 45vh;
+        z-index: 1000;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .itens-nav-div.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 125px;
+        transition: width 1s ease;
+    }
+
+    .itens-nav-div ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+
+    }
+
+    .itens-nav-div ul li {
+        margin: 20px 0;
+    }
+
+    .itens-nav-div ul li a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .itens-nav-div ul li a:hover {
+        color: #ddd;
+    }
+
+    .faq-item {
+        width: 80%;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 7rem;
+        height: 20rem;
+        margin-top: 30px;
+    }
+
+    #soultech-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .card1 h1,
+    .card2 h1,
+    .card3 h1 {
+        font-size: 0.85rem;
+    }
+
+    .card-top {
+        width: 4rem;
+        height: 4rem;
+        top: -2rem;
+    }
+
+    .card-top img {
+        scale: 400%;
+    }
+
+    .square-information {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .face-img {
+        display: none;
+    }
+
+    #footer-div {
+        margin-top: 7rem;
+    }
+
+    .itens-nav-div {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: 9rem;
+    }
+    
+
+    .itens-nav-div.active {
+        display: block;
+    }
+
+    .left-nav-div,
+    .menu-toggle {
+        width: 100%;
+    }
+
+    .square-front-contact h1 {
+        text-align: center;
+    }
+
+    .question-div {
+        background-position: bottom 1px;
+        background-position-y: calc(100% + -20px);
+
+    }
+
+    #frequently-questions {
+        flex-direction: column;
+    }
+
+    .faq-item {
+        width: 1200%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    #contact-soultech {
+        right: 0;
+        width: 50%;
+    }
+
+    .img-atomo {
+        display: none;
+    }
+
+    .apresentacao {
+        margin-left: -20px;
+    }
+
+    .itens-nav-div {
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 65px;
+        background-color: #1a1a1a;
+        width: 0;
+        height: 45vh;
+        z-index: 1000;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .itens-nav-div.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 125px;
+        transition: width 1s ease;
+    }
+
+    .itens-nav-div ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+
+    }
+
+    .itens-nav-div ul li {
+        margin: 20px 0;
+    }
+
+    .itens-nav-div ul li a {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .itens-nav-div ul li a:hover {
+        color: #ddd;
+    }
+    .faq-item {
+        width: 80%;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 6rem;
+        height: 20rem;
+    }
+
+    .card1 h1,
+    .card2 h1,
+    .card3 h1 {
+        font-size: 0.7rem;
+    }
+
+    .card1 p,
+    .card2 p,
+    .card3 p {
+        font-size: 0.7rem;
+    }
+
+    .card-top {
+        width: 4rem;
+        height: 4rem;
+        top: -2rem;
+    }
+
+    .card-top img {
+        scale: 400%;
+    }
+
+    .square-information {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .face-img {
+        display: none;
+    }
+
+    #footer-div {
+        margin-top: 7rem;
+    }
+
+    .itens-nav-div {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: 27rem;
+    }
+
+    .itens-nav-div.active {
+        display: block;
+    }
+
+    .left-nav-div,
+    .menu-toggle {
+        width: 100%;
+    }
+
+    .square-front-contact h1 {
+        text-align: center;
+    }
+
+    .question-div {
+        background-position: bottom 1px;
+        background-position-y: calc(100% + -20px);
+
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    #apresentation-soultech {
+        scale: 90%;
+        font-size: 0.9rem;
+        margin-left: 0rem;
+
+    }
+
+    .img-atomo {
+        display: none;
+    }
+
+    #contact-soultech {
+        right: 0;
+    }
+
+    .faq-item {
+        width: 80%;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 10rem;
+        height: 20rem;
+    }
+
+    .card1 h1,
+    .card2 h1,
+    .card3 h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-top {
+        width: 5rem;
+        height: 5rem;
+        top: -2.5rem;
+    }
+
+    .card-top img {
+        scale: 400%;
+    }
+
+    .square-information {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .face-img {
+        display: none;
+    }
+
+    #footer-div {
+        margin-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .img-atomo {
+        margin-left: 110%;
+        scale: 4500%;
+    }
+
+    #contact-soultech {
+        right: 14%;
+    }
+
+    #footer-div {
+        margin-top: 10rem;
+    }
+
+    #apresentation-soultech {
+        margin-left: 5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .img-atomo {
+        margin-left: 112%;
+        scale: 4500%;
+    }
+
+    #contact-soultech {
+        right: 7%;
+    }
+
+    #apresentation-soultech {
+        margin-left: 10rem;
+        font-size: 1.2rem;
+    }
+}

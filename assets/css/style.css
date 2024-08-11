@@ -1,9 +1,26 @@
 body {
-    background: linear-gradient(to top, #222222, #787878);
-    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #222222 29%, #787878);
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+h1,
+.itens-nav-div ul li a {
+    font-family: 'Inter', sans-serif;
+}
+
+body,
+p,
+a {
+    font-family: 'Inika', serif;
+}
+
+#soultech-cards img,
+#frequently-questions img,
+#contact-soultech img,
+#footer-div img {
+    width: 10px;
 }
 
 html {
@@ -26,8 +43,445 @@ html {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave na cor */
+    transition: 0.3s;
 }
 
-.title, .apresentacao p {
+.itens-nav-div ul li a:hover {
+    color: #cacaca;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.title,
+.apresentacao p {
     color: white;
+}
+
+.title {
+    align-items: left;
+    display: flex;
+    padding-left: 4rem;
+}
+
+.title h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.title h1 .techtitle {
+    display: inline-block;
+    margin-right: -7.5rem;
+}
+
+.apresentacao p,
+.saiba-mais-soultech {
+    width: 40vh;
+    margin-left: 5rem;
+}
+
+.saiba-mais-soultech {
+    display: flex;
+    justify-content: right;
+    transition: 0.3s;
+}
+
+.saiba-mais-soultech:hover {
+    transition: 0.3s;
+    scale: 102%
+}
+
+.saiba-mais-soultech a {
+    text-decoration: underline;
+    color: #848484;
+    text-align: center;
+    padding-right: 0.5rem;
+}
+
+.background-gradient-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 15rem);
+    background: linear-gradient(to right, #131313, #424242);
+    z-index: -1;
+
+}
+
+.background-gradient-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/ondas_topo.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.03;
+    z-index: -1;
+}
+
+.soultech-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+#square-info {
+    background-color: #404040;
+    border-radius: 32px;
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 20rem;
+    width: 90%;
+}
+
+.square-information {
+    display: flex;
+    align-items: center;
+}
+
+.square-information p {
+    padding-left: 2em;
+    padding-right: 2rem;
+    color: white;
+}
+
+.face-img {
+    border-radius: 10px;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.face-img:hover {
+    transition: 0.3s;
+    scale: 102%
+}
+
+
+#soultech-cards {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: #404040;
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 15rem;
+    margin: auto;
+    height: 25rem;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.card1 h1,
+.card2 h1,
+.card3 h1 {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.card-top {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #535353;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-top img {
+    max-width: none;
+    max-height: none;
+    scale: 600%;
+}
+
+#frequently-questions {
+    margin-top: 5rem;
+}
+
+#frequently-questions h1 {
+    text-align: center;
+    color: white;
+}
+
+.faq-container {
+    width: 80%;
+    max-width: 53vw;
+    margin: 0 auto;
+}
+
+.faq-item {
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.question-div {
+    margin-top: 2rem;
+    color: white;
+    background-color: #404040;
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 10px;
+    user-select: none;
+    background-image: url(../img/seta_baixo.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right 20px center;
+    cursor: pointer;
+}
+
+.faq-answer {
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    transition: all 0.3s ease;
+    display: none;
+    padding: 10px;
+    background-color: #404040;
+    color: #848484;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.faq-answer.collapsing {
+    transition: height 0.3s ease, opacity 0.3s ease;
+    height: 0;
+    opacity: 0;
+}
+
+#contact-soultech {
+    background-color: #404040;
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 25rem;
+    margin: auto;
+    height: 20rem;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    right: 20%;
+    margin-top: 5rem;
+}
+
+.square-front-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    z-index: 1;
+}
+
+.email-contact,
+.call-contact,
+.instagram-contact,
+.twitter-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding: 5px;
+}
+
+.email-contact img,
+.call-contact img,
+.instagram-contact img,
+.twitter-contact img {
+    margin-right: 5px;
+    scale: 200%;
+    filter: invert(100%) brightness(1000%);
+}
+
+.email-contact p,
+.call-contact p,
+.instagram-contact p,
+.twitter-contact p {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.img-atomo {
+    position: absolute;
+    margin-left: 130%;
+    scale: 4500%;
+    top: 50%;
+}
+
+.image-back-contact img {
+    border-radius: 0.5px;
+    z-index: -999;
+
+}
+
+#footer-div {
+    position: relative;
+    margin-top: 15rem;
+    width: 100%;
+}
+
+.background-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(to top, #161515, #6a6a6a);
+    z-index: -1;
+}
+
+.soultech-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.soultech-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/ondas_baixo.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.left-footer img {
+    width: 25vh !important;
+}
+
+.left-footer,
+.middle-footer,
+.right-footer {
+    flex: 1;
+}
+
+.middle-footer {
+    text-align: center;
+}
+
+.middle-footer p {
+    margin: 0;
+    color: white;
+}
+
+.right-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+}
+
+.contact-links a {
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-links img {
+    scale: 300%;
+    filter: invert(100%) brightness(1000%);
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 2px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.itens-nav-div.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+.itens-nav-div {
+    display: none;
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.itens-nav-div ul li {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.itens-nav-div.active ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#soultech-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
