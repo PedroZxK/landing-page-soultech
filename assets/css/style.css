@@ -43,15 +43,6 @@ html {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
-    /* Adiciona uma transição suave na cor */
-    transition: 0.3s;
-}
-
-.itens-nav-div ul li a:hover {
-    color: #cacaca;
-    text-decoration: underline;
-    transition: 0.3s;
 }
 
 .title,
@@ -85,12 +76,6 @@ html {
 .saiba-mais-soultech {
     display: flex;
     justify-content: right;
-    transition: 0.3s;
-}
-
-.saiba-mais-soultech:hover {
-    transition: 0.3s;
-    scale: 102%
 }
 
 .saiba-mais-soultech a {
@@ -156,14 +141,7 @@ html {
 .face-img {
     border-radius: 10px;
     margin: 30px;
-    transition: 0.3s;
 }
-
-.face-img:hover {
-    transition: 0.3s;
-    scale: 102%
-}
-
 
 #soultech-cards {
     display: flex;
@@ -333,7 +311,6 @@ html {
 .image-back-contact img {
     border-radius: 0.5px;
     z-index: -999;
-
 }
 
 #footer-div {
@@ -422,61 +399,19 @@ html {
     cursor: pointer;
     margin-left: auto;
     padding: 10px;
+    /* Adiciona a transição à propriedade 'transform' */
+    transition: transform 0.3s ease;
 }
 
+.menu-toggle.active {
+    /* Altera a rotação das barras quando o menu está ativo */
+    transform: rotate(90deg); 
+}
 .menu-toggle .bar {
     background-color: #fff;
     height: 3px;
     width: 25px;
     margin: 2px 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-.itens-nav-div.active {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    transform: translateX(0);
-}
-
-.itens-nav-div {
-    display: none;
-    opacity: 0;
-    transform: translateX(-10px);
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-.itens-nav-div ul li {
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.itens-nav-div.active ul li {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 #soultech-cards {
