@@ -109,7 +109,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 10rem);
     background: linear-gradient(to right, #131313, #424242);
     z-index: -1;
 
@@ -142,8 +142,8 @@ html {
     border-radius: 32px;
     box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
     margin: auto;
-    margin-top: 20rem;
-    width: 90%;
+    margin-top: 15rem;
+    width: 60%;
 }
 
 .square-information {
