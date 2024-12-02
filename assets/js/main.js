@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     var faqItems = document.querySelectorAll('.faq-item');
 
+    // Fecha todas as respostas no início
+    faqItems.forEach(function (item) {
+        var answer = item.querySelector('.faq-answer');
+        answer.style.display = "none";
+        answer.style.height = "0px";
+    });
+
     faqItems.forEach(function (item) {
         item.querySelector('.question-div').addEventListener('click', function () {
             var answer = item.querySelector('.faq-answer');
@@ -13,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 answer.style.height = "0px";
                 answer.classList.add('collapsing');
                 let height = answer.scrollHeight;
-                answer.style.height = height + "px";
+                window.setTimeout(() => {
+                    answer.style.height = height + "px";
+                }, 10);
                 window.setTimeout(() => {
                     answer.classList.remove('collapsing');
                     answer.style.height = "auto";
